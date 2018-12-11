@@ -1,6 +1,10 @@
 {
     "extends": "airbnb",
     "parser": "babel-eslint",
+    "plugins": [
+      "react-native",
+      "flowtype"
+    ],
     "rules": {
       "consistent-return": 0,
       "jsx-a11y/click-events-have-key-events": 0,
@@ -19,7 +23,13 @@
           "extensions": [".js"]
         }
       ],
-      "indent": ["error", 4]
+      "indent": ["error", 4],
+      "react/jsx-indent": ["error", 4],
+      "react/jsx-indent-props": ["error", 4]
+    },
+    "env" : {
+      "node" : true,
+      "es6": true
     }
   }
   
